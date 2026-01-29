@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+#filename: myscript.sh
+echo "startScript" >&2
 echo "$PATH" >&2
 which bash >&2
 
