@@ -3,7 +3,8 @@
 echo "startScript" >&2
 echo "$PATH" >&2
 which bash >&2
-
+echo "creating mkdir -p /home/runner/.cargo/bin" 
+mkdir -p /home/runner/.cargo/bin
 echo "--creating wrapper--" >&2
 cat > /home/runner/.cargo/bin/bash <<'EOF'
 #!/usr/bin/bash
